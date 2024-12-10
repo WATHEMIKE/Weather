@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #a3d4f7, #fff);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .weather-container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            max-width: 500px;
+        }
+
+        .current-weather {
+            margin-bottom: 20px;
+        }
+
+        .current-weather h1 {
+            font-size: 50px;
+            margin: 10px 0;
+        }
+
+        .current-weather p {
+            margin: 5px 0;
+            font-size: 20px;
+        }
+
+        .forecast {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .day {
+            text-align: center;
+        }
+
+        .day p {
+            margin: 5px 0;
+        }
+
+        .day .temp {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="weather-container">
+        <div class="current-weather">
+            <p>City</p>
+            <h1>+20°C</h1>
+            <p>Cloudy</p>
+            <p>Pressure: 1021 hPa</p>
+            <p>Sunrise: 06:36 | Sunset: 16:03</p>
+        </div>
+        <div class="forecast">
+            <div class="day">
+                <p>Sun</p>
+                <p class="temp">20°C / 10°C</p>
+            </div>
+            <div class="day">
+                <p>Mon</p>
+                <p class="temp">17°C / 8°C</p>
+            </div>
+            <div class="day">
+                <p>Tue</p>
+                <p class="temp">18°C / 7°C</p>
+            </div>
+            <div class="day">
+                <p>Wed</p>
+                <p class="temp">16°C / 6°C</p>
+            </div>
+            <div class="day">
+                <p>Thu</p>
+                <p class="temp">18°C / 9°C</p>
+            </div>
+            <div class="day">
+                <p>Fri</p>
+                <p class="temp">19°C / 10°C</p>
+            </div>
+            <div class="day">
+                <p>Sat</p>
+                <p class="temp">17°C / 5°C</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
